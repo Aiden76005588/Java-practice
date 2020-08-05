@@ -8,12 +8,12 @@ public class ArrayTest03 {
 				{30,30,30,30,30}
 		};
 		int total =0;
-		int h=0;
+		int count=0;
 		
 		
 		for(int i =0; i<num.length; i++) {
 			for(int j =0; j<num[i].length; j++) {
-				h++;
+				count++;
 				total += num[i][j];
 				
 			}			

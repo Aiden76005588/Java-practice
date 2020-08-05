@@ -1,0 +1,97 @@
+package test2;
+
+
+import java.util.Date;
+
+public class TestEmp {
+	public Emp[] createEmpArr() {
+		Emp man = new Man("홍길동", "영업부");
+		Emp man2 = new Man("이완용", "영업부");
+		Emp en1 = new Eng("이순신", "제조업");
+		Emp en2 = new Eng("강감찬", "연구업");
+		Emp[] arr = new Emp[4];
+		arr[0] = man;
+		arr[1] = en1;
+		arr[2] = en2;
+		arr[3]= man2;
+		return arr;
+	}
+	public void printEmp(Emp e) {
+		System.out.println(e.printInfo());
+	}
+	public void printEmpArr(Emp[] arr) {
+		for (Emp emp : arr) {
+			System.out.println(emp.printInfo());
+		}
+	}
+	public void printChildData(Emp e) {		
+			if (e instanceof Man) {
+				Man m = (Man) e;
+				System.out.println(m.getName());
+				System.out.println(m.getDepart());
+			} else if (e instanceof Eng) {
+				Eng en = (Eng) e;
+				System.out.println(en.getName());
+				System.out.println(en.getSkill());
+			}		
+	}
+	public void printChildData(Emp[] arr) {
+		for (Emp e : arr) {
+			if (e instanceof Man) {
+				Man m = (Man) e;
+				System.out.println(m.getDepart());
+			} else if (e instanceof Eng) {
+				Eng en = (Eng) e;
+				System.out.println(en.getSkill());
+			}
+		}
+	}
+	public Emp serchChildData(Emp[] arr, String name) {
+		Emp data= null;
+		for (Emp e : arr) {
+			if(name.equals(e.getName())) {
+				data= e;
+			}
+		}
+		return data;
+	}
+	public String searchChildData(String name, Emp[] arr ) {
+		String data= "";
+		String token="/";
+		for (Emp e : arr) {
+			if (e instanceof Man) {
+				Man m = (Man) e;
+				if(name.equals(m.getDepart())) 
+					data= data+ m.getName()+token;					
+			} else if (e instanceof Eng) {
+				Eng en = (Eng) e;
+				if(name.equals(en.getSkill())) 
+					data= data+ en.getName()+token;					
+			}
+		}
+		return "검색결과 : " + data;
+	}
+	public static void main(String[] args) {
+		TestEmp test = new TestEmp();
+		Emp[] arr= test.createEmpArr();
+		//test.printEmpArr(arr);
+//		Emp data= test.serchChildData(arr, "홍길동");
+//		test.printChildData(data);
+		String result= test.searchChildData("영업부",arr );
+		System.out.println(result);
+		
+		Date d= new Date();
+		System.out.println(d);
+		System.out.println(d.toString());
+		
+		
+		
+		
+		
+		Eng e1= new Eng("홍길동","영업부");
+		Emp e2= new Eng("홍길동","영업부");
+		System.out.println(e1.equals(e2));
+		
+	}
+
+}

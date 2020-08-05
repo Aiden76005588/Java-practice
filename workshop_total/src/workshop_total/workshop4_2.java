@@ -16,7 +16,7 @@ public class workshop4_2 {
 //		System.out.println("-------------------------------------------");
 //		System.out.println(book1.bookName+"\t"+book1.bookPrice+"원\t"+book1.bookDiscountRate+"%\t"+book1.getDiscount()+"원");
 		
-		for(int i =0; )
+		
 		
 	}
 
