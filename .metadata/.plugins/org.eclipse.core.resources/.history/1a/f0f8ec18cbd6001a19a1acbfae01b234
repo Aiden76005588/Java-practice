@@ -1,0 +1,30 @@
+package Poly_test;
+
+public class TestEmp {
+	public void printEmp(Emp e) {
+		System.out.println(e.printInfo());
+		
+	}
+	public Emp[] printEmpArr(Emp[] emp) {
+		Emp man = new Man("홍길동", "영업부");
+		Emp en1 = new Eng("이순신", "제조업");
+		Emp en2 = new Eng("강감찬", "연구업");
+		Emp [] emp1 = new Emp[3];
+		emp1[0]= man;
+		emp1[1]= en1;
+		emp1[2]= en2;
+		return emp1;
+	}
+	
+	public static void main(String[] args) {
+
+//		Emp man = new Man("홍길동", "영업부");
+//		Emp en1 = new Eng("이순신", "제조업");
+//		Emp en2 = new Eng("강감찬", "연구업");
+		TestEmp test = new TestEmp();
+
+		//		test.printEmp(en2);
+		System.out.println(en1);
+	}
+
+}

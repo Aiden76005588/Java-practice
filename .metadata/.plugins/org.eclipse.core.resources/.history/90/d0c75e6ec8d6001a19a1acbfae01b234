@@ -1,0 +1,17 @@
+package Poly_test;
+
+public class TestEmp {
+	public void printEmp(Emp e) {
+		System.out.println(e.printInfo());
+		
+	}
+	public static void main(String[] args) {
+
+		Emp n = new Man("홍길동", "영업부");
+		Emp e = new Eng("이순신", "제조업");
+		TestEmp test = new TestEmp();
+		test.printEmp(e);
+		
+	}
+
+}

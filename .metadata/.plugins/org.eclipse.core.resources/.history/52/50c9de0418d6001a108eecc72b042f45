@@ -1,0 +1,17 @@
+package workshop_total;
+
+import java.util.Scanner;
+
+public class workshop2_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in); 
+		System.out.println("a의 값 :");
+		String num_1 =scan.next();
+		System.out.println("b의 값 :");
+		
+		
+	}
+
+}

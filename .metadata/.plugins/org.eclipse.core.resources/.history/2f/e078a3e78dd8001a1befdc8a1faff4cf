@@ -1,0 +1,10 @@
+package workshop4_8;
+
+public class Cafe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

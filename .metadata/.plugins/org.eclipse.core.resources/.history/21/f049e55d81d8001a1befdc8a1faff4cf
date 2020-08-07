@@ -1,0 +1,12 @@
+
+public class NullExceptionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = null;
+		System.out.println(name.length());
+		System.out.println("프로그램 종료");
+
+	}
+
+}

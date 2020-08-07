@@ -1,0 +1,17 @@
+
+public class TestPet {
+
+	public static void main(String[] args) {
+		
+		//고양이 2마리,강아지 1마리 ,물고기 1마리
+		Cat c = new Cat("야옹이", 3, "암놈");
+		Cat c2 = new Cat("고양이",5,"숫놈");
+		Dog d = new Dog("강아지",2,"숫놈", "블루");
+		Fish f = new Fish("물고기",1,"무성",12.1);
+		f.printInfo();
+		d.printInfo();
+		c.printInfo();
+
+	}
+
+}

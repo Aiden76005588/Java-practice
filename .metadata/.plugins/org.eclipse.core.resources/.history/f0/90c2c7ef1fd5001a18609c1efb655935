@@ -1,0 +1,23 @@
+
+public class ArrayTest08 {
+int[] score = { 99, 34, 67, 22, 11, 9 };
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayTest08 arrTest= new ArrayTest08();
+		int [] score= arrTest.score;
+		int max = score[0];
+		int min = score[0];
+		
+		for (int i = 0; i < score.length; i++) {
+			if (max < score[i]) {
+				max = score[i];
+			}
+			if (min > score[i]) {
+				min = score[i];
+			}
+		}
+		System.out.println(max);
+		System.out.println(min);
+	}
+
+}

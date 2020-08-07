@@ -1,0 +1,12 @@
+package Poly_test;
+
+public class TestEmp {
+
+	public static void main(String[] args) {
+
+	Emp e = new Man("홍길동","영업부");
+	System.out.println(e);
+		
+	}
+
+}

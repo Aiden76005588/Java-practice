@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\acorn\Downloads"/>
+			<item value="C:\Users\acorn\Downloads\0805수업소스"/>
+			<item value="C:\Users\acorn\Downloads\솔루션 (1)"/>
+			<item value="C:\Users\acorn\Downloads\상속연습_1"/>
+			<item value="C:\Users\acorn\Downloads\workshop04솔루션"/>
+			<item value="C:\Users\acorn\Downloads\07Day2"/>
+			<item value="C:\Users\acorn\Downloads\07Day"/>
+		</list>
+	</section>
+</section>

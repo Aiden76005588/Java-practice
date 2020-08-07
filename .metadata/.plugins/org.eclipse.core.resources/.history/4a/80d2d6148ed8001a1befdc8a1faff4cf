@@ -1,0 +1,32 @@
+package workshop4_8;
+
+public class Cafe {
+	
+	Coffee[] coffeList = new Coffee[10] ;	
+	int index =0;
+	
+	public Cafe() {
+		super();
+		
+	}
+	
+	public  void setCoffee(Coffee coffee) {
+		if(index < 10) {
+			coffeList[index]= coffee;
+			index=index+1;
+		}
+	}
+	public int totalPrice() {
+		int total=0;
+		for(int i =0; i<index; i++) {
+			total = total +coffeList[i].getPrice();
+		}
+		return total;
+	}
+	public Coffee[] getCoffeeList() {
+		return coffeList;
+	}
+	
+
+
+}

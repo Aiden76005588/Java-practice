@@ -1,0 +1,15 @@
+package workshop_total;
+
+public class workshop1_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = 77777;
+		int result = (num/100)*100;
+		System.out.println(result);
+		
+		
+
+	}
+
+}

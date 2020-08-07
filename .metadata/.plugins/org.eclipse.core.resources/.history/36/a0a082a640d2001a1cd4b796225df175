@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class workshop02_7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("1.숫자를 입력하세요");
+		int i =scan.nextInt();		
+		int i1=0;
+		
+		for(int  i11= 1; i11<=100; i11++) {
+			if(i11%5 ==0) {
+				int sum = i;
+				if(i11!=i11) System.out.print("+");
+				System.out.print(i11);
+			}			
+		}		
+		System.out.println("=" + i1);
+		scan.close();
+
+	}
+
+}

@@ -1,0 +1,41 @@
+
+public class TestPet {
+	public void petPrint(Pet p) {
+
+		if (p instanceof Cat) {
+			Cat c = (Cat) p;
+			System.out.println(c.getGender());
+		} else if (p instanceof Dog) {
+			Dog d = (Dog) p;
+			System.out.println(d.getColor());
+		} else if (p instanceof Fish) {
+			Fish f = (Fish) p;
+			System.out.println(f.getTailSize());
+		} else if (p instanceof Pet) {
+			System.out.println(p.printInfo());
+		} else {
+			System.out.println("잘못된 데이터");
+		}
+		
+	}
+	public void arrPrint(Pet[] pets) {
+		for(Pet p : pets) {
+			System.out.println(p.printInfo());
+		}
+	}
+
+	public static void main(String[] args) {
+		Pet c = new Cat("야옹이", 3, "암놈");
+		Pet d = new Dog("강아지", 10, "암놈", "검정");
+		Pet f = new Fish("븡어", 10, "암놈", 2.5);
+		Pet [] pets = new Pet[3];
+		pets[0] = c;
+		pets[1] = d;
+		pets[2] = f;
+		
+		TestPet test = new TestPet();
+		test.petPrint(c);
+		test.arrPrint(pets[0].getAge());
+
+	}
+}

@@ -1,0 +1,25 @@
+package Poly_test;
+
+
+public class Eng extends Emp {
+
+	String skill;
+
+	public Eng() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Eng(String ssn, String name, String salary, String skill) {
+		super(ssn, name, salary);
+		this.skill = skill;
+	}
+
+	@Override
+	public String getEmployee() {
+		// TODO Auto-generated method stub
+		return super.getEmployee()+"\t"+skill;
+	}
+	
+	
+}

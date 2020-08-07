@@ -1,0 +1,51 @@
+
+public class Pet {
+
+	String name;
+	int age;
+	String eat;
+	String cry;
+	String sleep;
+	
+
+	public String getEat() {
+		return eat;
+	}
+
+	public void setEat(String eat) {
+		this.eat = eat;
+	}
+
+	public String getCry() {
+		return cry;
+	}
+
+	public void setCry(String cry) {
+		this.cry = cry;
+	}
+
+	public String getSleep() {
+		return sleep;
+	}
+
+	public void setSleep(String sleep) {
+		this.sleep = sleep;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+}

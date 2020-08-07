@@ -1,0 +1,49 @@
+
+public class TestPet {
+
+	public static void main(String[] args) {
+		
+		//고양이 2마리,강아지 1마리 ,물고기 1마리
+//		Cat c = new Cat("야옹이", 3, "암놈");
+//		Cat c2 = new Cat("고양이",5,"숫놈");
+//		Dog d = new Dog("강아지",2,"숫놈", "블루");
+//		Fish f = new Fish("물고기",1,"무성",12.1123);
+
+		//Pet c = new Cat("야옹이",1,"암");
+		//부모타입 변수로 자식객체 저장이 가능하다.cat,dog..
+		//System.out.println(c.printInfo());
+		//부모타입 변수로 오버라이딩된 자식 객체함수 호출됨-동적바인딩
+//		System.out.println(c.getGender());
+		//부모타입 변수로 실제 자식객체를 가지고 있어도 자식 객체의 
+		//유일한 함수, 변수 접근이 안됨.
+		//Cat cat = (Cat)c;
+		//객체의 유일 변수, 함수접근을 위해 실제 객체ㅏ입으로 변환(타입캐스팅)
+		
+		//Pet f = new Fish("물고기",1,"ㄴ",12.11);
+		//Fish fish = (Fish)f;
+		
+		//System.out.println(c.printInfo());
+		//System.out.println(f.printInfo());
+		
+		
+		Pet c = new Cat("야옹이",1,"암");
+		System.out.println(c.printInfo());
+//		Dog d = new Dog("강아지", 10, "암","검정");
+		Pet d = new Dog("강아지", 10, "암","검정");
+		System.out.println(d.printInfo());
+		Pet f = new Fish("물고기", 10, "암",12.111);
+		System.out.println(f.printInfo());
+		Cat c1 =(Cat)c;
+		System.out.println(c1.getGender());
+		Dog d1 =(Dog)d;
+		System.out.println(d1.getColor());
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

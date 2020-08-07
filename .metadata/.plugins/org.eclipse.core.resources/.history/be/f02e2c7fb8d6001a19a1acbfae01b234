@@ -1,0 +1,14 @@
+
+public class TestPet {
+	public  void petPrint(Pet p) {
+		
+	}
+	public static void main(String[] args) {
+		Pet c= new Cat("야옹이", 3, "암놈"); 
+		Pet d= new Dog("강아지", 10, "암놈","검정");
+		Pet f= new Fish("븡어", 10, "암놈",2.5);
+		TestPet test= new TestPet();
+		test.petPrint(c);
+
+	}
+}

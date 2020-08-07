@@ -1,0 +1,17 @@
+package com.test1;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		AbstractClass x = new AbstractClass();
+		ConcreteClass y = new ConcreteClass(100);
+		System.out.println(y.getNum());
+		y.a();
+		int n=y.b();
+		y.c(100);
+		
+
+	}
+
+}

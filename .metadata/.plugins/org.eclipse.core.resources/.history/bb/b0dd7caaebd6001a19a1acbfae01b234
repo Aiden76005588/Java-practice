@@ -1,0 +1,10 @@
+package com.test1;
+
+public class ConcreteClass extends AbstractClass{
+	public ConcreteClass() {
+		super();
+	}
+	public ConcreteClass(int num) {
+		
+	}
+}

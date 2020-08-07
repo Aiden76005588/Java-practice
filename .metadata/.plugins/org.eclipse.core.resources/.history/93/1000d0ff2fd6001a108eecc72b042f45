@@ -1,0 +1,17 @@
+package workshop_total;
+
+public class workshop4_2 {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book book1 = new Book("SQL Plus",50000,0.05);
+		Book book2 = new Book("Java 2.0",40000,3.0);
+		Book book3 = new Book("JSP Servlet",60000,6.0);
+		
+		
+		System.out.println(book1.getDiscount());
+		System.out.println(book1.bookName+book1.bookPrice+book1.bookDiscountRate+book1.getDiscount());
+	}
+
+}
