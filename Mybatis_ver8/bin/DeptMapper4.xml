@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dept.DeptMapper4">
+
+	<delete id="multiDelete" parameterType="list">
+	delete from dept
+	where loc in
+	 <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+	 #{item.loc}
+	 </foreach>
+	</delete>
+	
+	<select id="multiSelect" parameterType="list" resultType="Dept">
+	select deptno, dname, loc
+	from dept
+	where deptno In
+	<foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+	#{item}
+	</foreach>
+	</select>
+	
+	<insert id="multiInsert" parameterType="arraylist">
+	insert all
+	<foreach item="item" index="index" collection="list">
+	into dept (deptno, dname, loc)
+	values(#{item.deptno}, #{item.dname}, #{item.loc})
+	</foreach>
+	select * from dual	
+	</insert>
+	
+		 
+	
+</mapper>
+
+
